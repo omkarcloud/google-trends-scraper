@@ -1,0 +1,10 @@
+services:
+  google-trends-scraper:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      # Optional — a rotating residential proxy for high-volume Explore calls.
+      # - GOOGLE_TRENDS_PROXY=http://user:pass@host:port

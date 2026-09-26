@@ -1,0 +1,7 @@
+bottle
+cheroot
+curl_cffi
+lxml
+cssselect
+marshmallow
+pytest
